@@ -12,7 +12,7 @@ weatherForm.addEventListener('submit', (e) => {
   messageOne.textContent = 'Loading...'
   messageTwo.textContent = ''
 
-  const url = `http://localhost:3000/weather?address=${city}`
+  const url = `/weather?address=${city}`
 
   document.querySelector('input').value = '' //to make the input empty after gettin data
   //fetching the data
