@@ -12,7 +12,7 @@ const forecast = (latitude, longitude, callback) => {
     } else if (body.error) {
       callback('The given location is invalid', undefined)
     } else {
-      callback(undefined, `${body.daily.data[0].summary} its currently ${body.currently.temperature.toFixed()}°C degrees out. There is a ${body.currently.precipProbability}% chance of rain.`)
+      callback(undefined, `${body.daily.data[0].summary} its currently ${body.currently.temperature.toFixed()}°C degrees out. There is a ${body.currently.precipProbability}% chance of rain. The highest temperature today is ${body.daily.data[0].temperatureHigh.toFixed()} and the lowest temperature today is ${body.daily.data[0].temperatureLow.toFixed()}`)
     }
   })
 }

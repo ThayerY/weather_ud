@@ -58,3 +58,20 @@ button:hover {
   background-color: chartreuse;
   color: #333333;
 }
+
+#message-1 {
+  color: white;
+  font-size: 25px;
+  display: inline-table;
+  margin: 0px auto 0px auto;
+  padding: 4px;
+  background-color: green;
+}
+
+#message-2 {
+  color: #ccc;
+  display: inline-table;
+  margin: 0px auto 0px auto;
+  padding: 4px;
+  background-color: green;
+}
