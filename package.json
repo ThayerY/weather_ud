@@ -5,7 +5,8 @@
   "main": "index.js",
   "debug.javascript.codelens.npmScripts": "never",
   "scripts": {
-    "start": "node src/app.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js -e js,hbs"
   },
   "keywords": [],
   "author": "",
@@ -14,10 +15,10 @@
     "dotenv": "^5.0.1",
     "express": "^4.17.2",
     "hbs": "^4.2.0",
-    "nodemon": "^2.0.15",
     "request": "^2.88.2"
   },
   "devDependencies": {
-    "axios": "^0.24.0"
+    "axios": "^0.24.0",
+    "nodemon": "^2.0.15"
   }
 }
